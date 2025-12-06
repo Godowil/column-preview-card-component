@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Gold500: hsl(31, 77%, 52%);
+    --Cyan800: hsl(184, 100%, 22%);
+    --Green950: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    /*paragraphs*/
+    --Gray100: hsl(0, 0%, 95%);
+    /* para (background, headings, buttons)*/
+}
+body{
+    background-color: var(--Gray100);
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+  .card{
+    width: 328px;
+    height: 1330px;
+    margin: 85px auto 42px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+  }
+section{
+  width: 100%;
+  height: 442px;
+  padding: 46px;
+  
+  
+}
+#sedan{
+  background-color: var(--Gold500);
+}
+#suvs{
+  background-color: var(--Cyan800);
+}
+#luxury{
+  background-color: var(--Green950);
+}
+img{
+  margin-bottom: 34px;
+}
+
+h2{
+  margin-bottom: 24px;
+  color: var(--Gray100);
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 34px;
+
+}
+p{
+  color: var(--Transparent-white);
+  line-height: 26px;
+  font-size: 15px ;
+  margin-bottom: 28px;
+}
+
+button{
+  width: 148px;
+  height: 50px;
+  border-radius: 42px;
+  background-color: var(--Gray100);
+  border: none;
+  font-family:"Lexend Deca", sans-serif ;
+  font-size: 15px;
+
+}
+#sedan-btn{
+  color: var(--Gold500);
+}
+#suv-btn{
+  color: var(--Cyan800);
+}
+#lux-btn{
+  color: var(--Green950);
+}
+button:hover{
+  cursor: pointer;
+  border: 2px solid var(--Gray100);
+  
+}
+#sedan-btn:hover{
+  background-color:var(--Gold500);
+  color: var(--Gray100);
+}
+#suv-btn:hover{
+  background-color:var(--Cyan800);
+  color: var(--Gray100);
+}
+#lux-btn:hover{
+  background-color:var(--Green950);
+  color: var(--Gray100);
+}
+
+
+/*Desktop*/
+
+@media(min-width:900px){
+  .card{
+    display: flex;
+    width: 920px;
+    margin-top: 160px;
+    justify-content: center;
+    align-items: center;
+  }
+  section{
+    height: 496px;
+  }
+  p{
+    margin-bottom: 70px;
+  }
+}
+
+
